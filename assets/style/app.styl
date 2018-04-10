@@ -1,0 +1,31 @@
+$theme := {
+  primary: #00984F
+  secondary: #424242
+  bg_app: #f9f9f9
+  bg_drawer: #ecf0f1
+  bg_footer: #eeeeee
+  accent: #ce93d8
+  info: #0D47A1
+  warning: #ffb300
+  error: #B71C1C
+  success: #2E7D32
+}
+
+// Import Vuetify styling
+@require '~vuetify/src/stylus/main.styl'
+
+body
+  font-family: 'Raleway', sans-serif;
+
+.en-loading
+  position relative;
+  &:before
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 37, 37, 0.11);
+    z-index: 11;
+
+.page
+  @extend .fade-transition
